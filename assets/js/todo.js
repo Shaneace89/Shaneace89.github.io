@@ -16,7 +16,7 @@ $('input').keypress(function(event){
 
     $('ul').append(
     `
-    <li>${todoItem} <span><i class="fas fa-trash"></i></span></li>
+    <li>${todoItem} <span><i class="fa fa-trash"></i></span></li>
     `
     )
   }
