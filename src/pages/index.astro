@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home | Shane Fleming">
+  
+<!-- Banner / Hero Section -->
+  <section class="pt-40 pb-20">
+    <div class="max-w-5xl mx-auto px-6 text-left">
+      <div class="inline-flex border-2 border-white/20 rounded-full w-[4.5rem] h-[4.5rem] items-center justify-center mb-6">
+        <i class="fa fa-power-off text-4xl text-white"></i>
+      </div>
+      <br />
+      <h2 class="font-[Raleway] font-bold text-4xl tracking-[0.1em] uppercase text-white border-b-2 border-white/20 pb-4 mb-4 inline-block">Shane Fleming</h2>
+      <p class="font-[Raleway] font-light tracking-[0.1em] text-lg uppercase block">System Analyst</p>
+    </div>
+  </section>
+
+  <!-- About Me Section (Slants UP to the right) -->
+  <section class="bg-slate-800/95 pt-[8vw] pb-[10vw] [clip-path:polygon(0_4vw,100%_0,100%_100%,0_calc(100%-4vw))] mt-8 relative z-10">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="text-left w-full">
+        <h2 class="font-[Raleway] font-bold text-2xl uppercase tracking-widest border-b-2 border-white/20 pb-4 mb-6 block">About Me</h2>
+        <p class="mb-6 leading-relaxed">Hello, my name is Shane Fleming. I am currently a System Analyst at the Texas School Safety Center at Texas State University. My passion in life centers around cultivating relationships and the opportunity to analyze and fix complex problems. I thrive in collaborative environments by enhancing my own personal knowledge and achieving success as a team. In my own time, I enjoy building and creating new projects with Raspberry Pis, as well as 3d modeling and printing.</p>
+        <p class="leading-relaxed">I have been coding since high school, when my shop teacher introduced me to Python. Since, I have taken classes in and worked extensively with coding languages such as C++, Python, HTML, and CSS.</p>
+      </div>
+      <a href="https://github.com/Shaneace89" class="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-slate-700 shadow-xl">
+        <img src="/images/pic01.jpg" alt="Shane Fleming" class="w-full h-full object-cover" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Skills Section (Slants DOWN to the right) -->
+  <section class="bg-indigo-900/95 pt-[8vw] pb-[10vw] [clip-path:polygon(0_0,100%_4vw,100%_calc(100%-4vw),0_100%)] -mt-[4vw] relative z-20">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-indigo-800 shadow-xl p-4 bg-white">
+        <img src="/images/pic02.png" alt="Skills" class="w-full h-full object-contain" />
+      </div>
+      <div class="text-right w-full">
+        <h2 class="font-[Raleway] font-bold text-2xl uppercase tracking-widest border-b-2 border-white/20 pb-4 mb-6 block">Skills</h2>
+        <p class="leading-relaxed">
+          <strong class="text-white">OS:</strong> Windows, MacOS, Linux, Debian, Red Hat Enterprise Linux<br/>
+          <strong class="text-white">Languages:</strong> HTML, CSS, C++, Python, JavaScript<br/>
+          <strong class="text-white">SaaS:</strong> ArcGIS, Qualtrics, Zoom, Microsoft Office 365<br/>
+          <strong class="text-white">Other:</strong> Virtual Machines, Adobe Acrobat, Photoshop, Spark, Premiere
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section (Slants UP to the right) -->
+  <section class="bg-slate-800/95 pt-[8vw] pb-[10vw] [clip-path:polygon(0_4vw,100%_0,100%_100%,0_calc(100%-4vw))] -mt-[4vw] relative z-30">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="text-left w-full">
+        <h2 class="font-[Raleway] font-bold text-2xl uppercase tracking-widest border-b-2 border-white/20 pb-4 mb-6 block">Education and Experience</h2>
+        <p class="leading-relaxed">I have a Bachelor of General Studies in Integrated Studies with a Minor in Writing. I also have over 10 years experience in various levels of IT including networking, Tier I and Tier II support, System Administrator, and System Analyst.</p>
+      </div>
+      <a href="http://www.txstate.edu/" class="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-slate-700 shadow-xl">
+        <img src="/images/pic03.jpg" alt="Texas State University" class="w-full h-full object-cover" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Code Examples Section (Slants DOWN to the right, flat bottom) -->
+  <section class="bg-slate-900/95 pt-[10vw] pb-24 [clip-path:polygon(0_0,100%_4vw,100%_100%,0_100%)] -mt-[4vw] relative z-40">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-[Raleway] font-bold text-2xl uppercase tracking-widest border-b-2 border-white/20 pb-4 mb-6 block">Code Examples</h2>
+      <p class="mb-10 leading-relaxed block">My coding experience ranges from classroom, to hobbyist builds, to even work projects. My programs that are owned by me and not another entity are located on my GitHub. Here are a few examples.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- 1: To Do List -->
+        <article class="bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col border border-white/5">
+          <a href="./todo.html" class="block overflow-hidden"><img src="/images/pic09.jpg" alt="" class="w-full hover:scale-105 transition-transform duration-300" /></a>
+          <div class="p-6 flex-grow">
+            <h3 class="font-[Raleway] font-bold text-lg uppercase tracking-wider mb-3">To Do List</h3>
+            <p class="text-sm mb-4 text-gray-300">JavaScript: A simple web-based todo list. Written in HTML, CSS, and JavaScript.</p>
+            <a href="./todo.html" class="text-xs font-[Raleway] uppercase tracking-widest font-bold border-b border-indigo-400 pb-1 text-indigo-300 hover:text-white transition-colors">Live Application <i class="fa fa-chevron-right ml-1"></i></a>
+          </div>
+        </article>
+
+        <!-- 2: Motocross Gatetimer -->
+        <article class="bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col border border-white/5">
+          <a href="https://github.com/Shaneace89/Motocross-Gatetimer" class="block overflow-hidden"><img src="/images/pic04.jpg" alt="" class="w-full hover:scale-105 transition-transform duration-300" /></a>
+          <div class="p-6 flex-grow">
+            <h3 class="font-[Raleway] font-bold text-lg uppercase tracking-wider mb-3">Motocross Gatetimer</h3>
+            <p class="text-sm mb-4 text-gray-300">Python: Gate Timer, records lab times using a PIR setup on a raspberry pi.</p>
+            <a href="https://github.com/Shaneace89/Motocross-Gatetimer" class="text-xs font-[Raleway] uppercase tracking-widest font-bold border-b border-indigo-400 pb-1 text-indigo-300 hover:text-white transition-colors">Learn more <i class="fa fa-chevron-right ml-1"></i></a>
+          </div>
+        </article>
+
+        <!-- 3: Read Directory -->
+        <article class="bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col border border-white/5">
+          <a href="https://github.com/Shaneace89/Read-Directory" class="block overflow-hidden"><img src="/images/pic05.jpg" alt="" class="w-full hover:scale-105 transition-transform duration-300" /></a>
+          <div class="p-6 flex-grow">
+            <h3 class="font-[Raleway] font-bold text-lg uppercase tracking-wider mb-3">Read Directory</h3>
+            <p class="text-sm mb-4 text-gray-300">C++: Reads from custom directory and out puts it to a .csv file. Excluding the file path and only saving the 'x' amount of the beginning of the filename.</p>
+            <a href="https://github.com/Shaneace89/Store-Inventory-Linked-List" class="text-xs font-[Raleway] uppercase tracking-widest font-bold border-b border-indigo-400 pb-1 text-indigo-300 hover:text-white transition-colors">Learn more <i class="fa fa-chevron-right ml-1"></i></a>
+          </div>
+        </article>
+
+        <!-- 4: Syntax Checker -->
+        <article class="bg-slate-800 rounded-lg shadow-lg overflow-hidden flex flex-col border border-white/5">
+          <a href="https://github.com/Shaneace89/Syntax-Check" class="block overflow-hidden"><img src="/images/pic06.jpg" alt="" class="w-full hover:scale-105 transition-transform duration-300" /></a>
+          <div class="p-6 flex-grow">
+            <h3 class="font-[Raleway] font-bold text-lg uppercase tracking-wider mb-3">Syntax Checker</h3>
+            <p class="text-sm mb-4 text-gray-300">C++: Unlike a typical code linter, this syntax validator does not care about coding styles and formatting.</p>
+            <a href="https://github.com/Shaneace89/Syntax-Check" class="text-xs font-[Raleway] uppercase tracking-widest font-bold border-b border-indigo-400 pb-1 text-indigo-300 hover:text-white transition-colors">Learn more <i class="fa fa-chevron-right ml-1"></i></a>
+          </div>
+        </article>
+      </div>
+      
+      <a href="https://github.com/Shaneace89?tab=repositories" class="inline-block border-2 border-white/20 font-[Raleway] font-bold uppercase tracking-widest text-sm px-8 py-3 rounded hover:bg-white/10 transition-colors">Browse All</a>
+    </div>
+  </section>
+</Layout>

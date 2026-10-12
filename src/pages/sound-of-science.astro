@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="The Sound of Science | Shane Fleming">
+  
+  <!-- Article Wrapper (Matches your site's angled aesthetic) -->
+  <main class="bg-slate-800/95 py-32 relative skew-y-2 mt-10">
+    <div class="-skew-y-2 max-w-3xl mx-auto px-6">
+      
+      <!-- Article Header -->
+      <header class="mb-16 border-b-2 border-indigo-500/30 pb-8">
+        <h1 class="font-[Raleway] font-bold text-4xl leading-tight text-white mb-6">
+          The Sound of Science: How Modern Physics is Building Rocky's Xenonite
+        </h1>
+        
+        <!-- Metadata Block -->
+        <div class="bg-slate-900/50 p-6 rounded-lg border border-white/10 text-sm font-[Raleway] tracking-wider leading-relaxed text-indigo-200">
+          <p><strong>Course:</strong> ENG 3313 Scientific Writing</p>
+          <p><strong>Purpose:</strong> Using Project Hail Mary to bridge the gap between science fiction and the reality of advanced 3D printing</p>
+          <p><strong>Audience:</strong> Academic faculty and science fiction enthusiasts</p>
+          <p><strong>Role:</strong> Sole writer, researcher, and designer</p>
+        </div>
+      </header>
+
+      <!-- Article Body -->
+      <article class="font-[Source_Sans_Pro] text-lg text-gray-300 leading-loose space-y-8">
+        
+        <p>
+          Project Hail Mary hit theaters on March 20th, and while Ryan Gosling's portrayal of the quick-witted Dr. Ryland Grace is earning rave reviews, it is the technology on board his ship that's catching the eyes of engineers. The movie is an adaptation of the book by No. 1 New York Times bestselling author Andy Weir. To keep this as spoiler-free as possible, Grace and his partner must quickly overcome numerous obstacles and discover a way to save humanity. They are outfitted with some of the best scientific equipment known to man, including some never-before-seen 3D printing technologies that help them quickly fabricate tools, test hypotheses, and build structural environments in zero gravity to help assist them along their journey.
+        </p>
+
+        <p>
+          In the book, Grace's companion, Rocky, first uses a substance called Xenonite, made mostly of the noble gas xenon, to quickly fabricate a diorama to help communicate a situation to Grace. As I read through Weir's Project Hail Mary, I couldn't help but find a similarity in how Weir describes Rocky's use of Xenonite and my own personal Fused Deposition Modeling (FDM) Creality Ender 3 Pro 3D printer. This, of course, led down a rabbit hole on the history of 3D printing, and NASA's use of it in zero gravity, and the new technological advances that have come from it.
+        </p>
+
+        <p>
+          When you think of 3D printing, you are likely thinking of the FDM printer that is collecting dust in your closet. These rely on "Photo- and thermo-activated reactions (that) are dominant in Additive Manufacturing (AM) processes for polymerization or melting/deposition of polymers" (Habibi et al., 2022). You can think of it like building a house with Lincoln Logs and then supergluing them all together. Whereas in the book, Rocky's science fiction Xenonite is closer to J-B Weld than Lincoln Logs, as it requires mixing two parts before applying it.
+        </p>
+
+        <!-- Figure 1 -->
+        <figure class="my-12 bg-slate-900 rounded-lg p-4 border border-white/5">
+          <div class="aspect-video bg-slate-700 rounded flex items-center justify-center text-slate-500 mb-4">
+          <img src="/images/pic11.jpg" alt="3D printed boat named Benchy" class="rounded w-full h-full object-cover" />
+          </div>
+          <figcaption class="text-sm text-gray-400 border-l-4 border-indigo-500 pl-4">
+            <strong>Figure 1:</strong> A 3D printed boat named "Benchy". Note. The 3DBenchy is the most recognized torture-test in the hobbyist community (Creative Tools, 2019).
+          </figcaption>
+        </figure>
+
+        <p>
+          Though we have yet to find a way to solidify xenon at standard atmospheric pressure, there have been significant advances in 3D printing. "Proximal Sound Printing (PSP) is a new class of additive manufacturing (AM) processes where on-demand polymerization occurs through ultrasound waves interacting with printing material right at the proximity of the acoustic aperture by inducing cavitation" (Foroughi et al., 2026). These advances have paved the way for us to be able to manipulate, and 3D print at a cellular level. Proximal Sound Printing (PSP) is direct 3D printing of microstructures on polymers. PSP overcomes the limitations of other sound-based AM techniques by "enhancing resolution tenfold, reducing printing power fourfold, and decreasing maximum acoustic streaming velocity 1,600 times compared to common sound-based printing methods, enhancing repeatability" (Foroughi et al., 2026).
+        </p>
+
+        <p>
+          The level of improvement and at the speed that we are discovering them is astronomical. NASA sent the first 3D printer to the International Space Station (ISS) in 2014. In just twelve years, we have gone from the first, print-in-place ratchet in space to printing something in the 10-20 micrometer range on Earth.
+        </p>
+
+        <p>
+          I had the pleasure of sitting down with Paul Gradl, inventor and NASA principal propulsion engineer, to talk about the future of 3D printing and his thoughts on the advances we are making in the field. Paul recently won NASA's 2024 Invention of the Year, for his Thrust Chamber Liner and Fabrication Method. When asked how NASA has pioneered 3D printing and has pushed for its advancement, Paul said:
+        </p>
+
+        <blockquote class="border-l-4 border-indigo-400 bg-slate-900/50 p-6 rounded-r-lg italic text-indigo-100 my-8">
+          "NASA has played a key role in establishing 3D printing as a viable option for aerospace manufacturing. We took significant risks and made strategic investments to mature the technology, enabling rapid design iterations and taking parts through hot-fire testing. While not every effort succeeded, those challenges provided valuable lessons, advancing the technology for the entire industry" (National Aeronautics and Space Administration, 2023).
+        </blockquote>
+
+        <p>
+          Rapid Analysis and Manufacturing Propulsion Technology (RAMPT) is a perfect real-world example of Grace and Rocky's experimentation and development of tools with 3D printing.
+        </p>
+
+        <!-- Figure 2 -->
+        <figure class="my-12 bg-slate-900 rounded-lg p-4 border border-white/5">
+          <div class="aspect-square md:aspect-video bg-slate-700 rounded flex items-center justify-center text-slate-500 mb-4">
+          <img src="/images/pic12.jpg" alt="Additive Manufacturing Milestones by RAMPT" class="rounded w-full h-full object-contain bg-white" />
+          </div>
+          <figcaption class="text-sm text-gray-400 border-l-4 border-indigo-500 pl-4">
+            <strong>Figure 2:</strong> Additive Manufacturing Milestones by RAMPT. Note. This infographic illustrates the integration of 3D-printed bimetallic components and internal cooling structurers (National Aeronautics and Space Administration, 2023).
+          </figcaption>
+        </figure>
+
+        <p>
+          These advances in 3D printing have been pushed from micrometer range to full-scale rocket engines. The precision that we are learning with Proximal Sound Printing (PSP) is creating a new level of additive manufacturing (AM). Proximal Sound Printing (PSP) is much different than the Fused Deposition Modeling (FDM) printers we are used to. PSP is closer to Masked Stereolithography (MSLA), or better known as resin printing, where the printer uses light to cause a chemical reaction and solidify the resin. To help us understand the jump from light to sound, we sat down with Shervin Foroughi co-author of Proximal sound printing: direct 3D printing of microstructures on polymers, to help explain how PSP differs from what is commercially available on the market right now.
+        </p>
+
+        <blockquote class="border-l-4 border-indigo-400 bg-slate-900/50 p-6 rounded-r-lg italic text-indigo-100 my-8">
+          "Photocuring-based AM methods, such as digital light processing (DLP) and stereolithography (SLA) are limited to photo-curable resins, which also restricts the versatility of these methods due to challenges like light attenuation and material customization. Printing heat-curing thermosets by incorporating a heat source is limited to approaches that utilize supporting medium frontal polymerization or rheological modification" (Foroughi et al., 2026).
+        </blockquote>
+
+        <p>
+          As NASA heads to the Moon for the first time in 50 years, the nation is captivated by the thought of space journey again. As we wait for the first photos from Artemis II to reveal the secrets of the dark side of the Moon, we can experience Andy Weir's Project Hail Mary universe come to life in IMAX, starring Ryan Gosling as Dr. Ryland Grace. Even though we are likely to never see a product like Xenonite in our lifetime, the science and engineering that books and movies like Project Hail Mary will help spark a new generation of engineers. 
+        </p>
+
+        <blockquote class="border-l-4 border-indigo-400 bg-slate-900/50 p-6 rounded-r-lg italic text-indigo-100 my-8">
+          "I think it's a reminder of what we're capable of as human beings. I love Andy's point of view on things, because he's not saying that there won't be problems in the future, but he's saying that human beings make the impossible possible all the time. That's what human history is, it's us doing things that seemed impossible at one point, and then we figure it out" (Ryan Gosling, Associated Press, 2026).
+        </blockquote>
+
+        <!-- Figure 3 -->
+        <figure class="my-12 bg-slate-900 rounded-lg p-4 border border-white/5">
+          <div class="aspect-video bg-slate-700 rounded flex items-center justify-center text-slate-500 mb-4">
+             <!-- Replace with actual Earth image: <img src="/images/earth.jpg" alt="Thinking of you, Earth" class="rounded w-full h-full object-cover" /> -->
+             <img src="/images/pic10.jpg" alt="Thinking of you, Earth" class="rounded w-full h-full object-cover" />
+          </div>
+          <figcaption class="text-sm text-gray-400 border-l-4 border-indigo-500 pl-4">
+            <strong>Figure 3:</strong> Thinking of you, Earth. Note. Nasa astronaut and Artemis II Commander Reid Wiseman peers out of one of the Orion spacecraft's main cabin windows, looking back at Earth as the crew travels towards the Moon. (National Aeronautics and Space Administration, 2026).
+          </figcaption>
+        </figure>
+
+      </article>
+
+      <!-- References Section -->
+      <section class="mt-20 pt-10 border-t-2 border-white/10">
+        <h2 class="font-[Raleway] font-bold text-2xl uppercase tracking-widest text-white mb-8">References</h2>
+        <ul class="space-y-6 text-sm text-gray-400 break-words">
+          <li class="pl-6 -indent-6">Associated Press. (2026). Ryan Gosling on the optimism of "Project Hail Mary". https://apnews.com/video/ryan-gosling-talks-new-sci-fi-film-fald803232154ef8a6eef9628e01lelf</li>
+          <li class="pl-6 -indent-6">CreativeTools. (2019). #3DBenchy - The jolly 3D printing torture-test by Creative Tools. Printables. https://www.printables.com/model/3161-3d-benchy</li>
+          <li class="pl-6 -indent-6">Foroughi, S., Habibi, M., & Packirisamy, M. (2026). Proximal sound printing: direct 3D printing of microstructures on polymers. Microsystems & Nanoengineering, 12(1), Article 12. https://doi.org/10.1038/s41378-025-01035-w</li>
+          <li class="pl-6 -indent-6">Habibi, M., Foroughi, S., Karamzadeh, V., & Packirisamy, M. (2022). Direct sound printing. Nature Communications, 13(1), 1800. https://doi.org/10.1038/s41467-022-29395-1</li>
+          <li class="pl-6 -indent-6">National Aeronautics and Space Administration. (2023). Meet the inventor: Paul Gradl. NASA Technology Transfer Program. https://technology.nasa.gov/blog-meet-the-inventor-paul-gradl</li>
+          <li class="pl-6 -indent-6">National Aeronautics and Space Administration. (2026). NASA astronaut and Artemis II Thinking of you, Earth. https://www.nasa.gov/image-detail/amf-art002e008486/</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+</Layout>

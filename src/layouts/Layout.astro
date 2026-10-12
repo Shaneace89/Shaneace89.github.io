@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+const { title = "Shane Fleming | Systems Analyst" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+  </head>
+  <body class="font-[Source_Sans_Pro] text-gray-200 antialiased bg-slate-900 relative min-h-screen flex flex-col">
+    
+    <!-- Global Background -->
+    <div class="fixed inset-0 z-[-1] bg-[url('/images/bg.jpg')] bg-cover bg-center bg-fixed">
+      <div class="absolute inset-0 bg-slate-900/85"></div>
+    </div>
+
+<!-- Global Header & Navigation -->
+    <header class="fixed top-0 w-full bg-slate-800/95 z-50 shadow-md">
+      <div class="flex justify-between items-center px-6 py-4">
+        <h1 class="font-[Raleway] font-bold tracking-widest uppercase text-white">
+          <a href="/">Shane Fleming</a>
+        </h1>
+        
+        <!-- Hamburger Button (Mobile Only) -->
+        <button id="menu-btn" class="md:hidden text-white hover:text-indigo-400 focus:outline-none transition-colors">
+          <i class="fa fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Desktop Navigation (Hidden on Mobile) -->
+        <nav class="hidden md:flex font-[Raleway] font-bold tracking-widest text-sm uppercase gap-6">
+          <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+          <a href="/sound-of-science" class="text-gray-300 hover:text-white transition-colors">Writing</a>
+          <a href="/coding" class="text-gray-300 hover:text-white transition-colors">Coding</a>
+          <a href="/photography" class="text-gray-300 hover:text-white transition-colors">Photography</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation Dropdown (Hidden by Default) -->
+      <nav id="mobile-menu" class="hidden flex-col font-[Raleway] font-bold tracking-widest text-sm uppercase bg-slate-800 px-6 py-4 space-y-4 shadow-xl border-t border-slate-700 md:hidden">
+        <a href="/" class="block text-gray-300 hover:text-white transition-colors">Home</a>
+        <a href="/writing" class="block text-gray-300 hover:text-white transition-colors">Writing</a>
+        <a href="/coding" class="block text-gray-300 hover:text-white transition-colors">Coding</a>
+        <a href="/photography" class="block text-gray-300 hover:text-white transition-colors">Photography</a>
+      </nav>
+    </header>
+
+    <!-- Page Content Injected Here -->
+    <div class="flex-grow pt-24">
+      <slot /> 
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="bg-slate-900 py-12 border-t-4 border-slate-800 mt-auto">
+      <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="font-[Raleway] font-bold text-xl uppercase tracking-widest border-b-2 border-white/10 pb-4 mb-4">Get in touch</h2>
+          <p class="leading-relaxed text-sm">Don't hesitate to reach out if you have questions or wish to schedule an interview.</p>
+        </div>
+        <div class="flex flex-col justify-center gap-4">
+          <a href="mailto:shaneace89@gmail.com" class="flex items-center gap-4 hover:text-indigo-400 transition-colors text-sm"><div class="border-2 border-white/20 w-8 h-8 rounded-full flex items-center justify-center"><i class="fa fa-envelope"></i></div> shaneace89@gmail.com</a>
+          <a href="https://github.com/Shaneace89" class="flex items-center gap-4 hover:text-indigo-400 transition-colors text-sm"><div class="border-2 border-white/20 w-8 h-8 rounded-full flex items-center justify-center"><i class="fa fa-github"></i></div> github.com/Shaneace89</a>
+        </div>
+      </div>
+    </footer>
+<script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+        });
+      }
+    </script>
+  </body>
+</html>
