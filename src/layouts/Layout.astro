@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-const { title = "Shane Fleming | Systems Analyst" } = Astro.props;
+const { title = "Shane Fleming | Systems Analyst", noindex = false } = Astro.props;
 ---
 
 <html lang="en">
@@ -8,6 +8,7 @@ const { title = "Shane Fleming | Systems Analyst" } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
   </head>
